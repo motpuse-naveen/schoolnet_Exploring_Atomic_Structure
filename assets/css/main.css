@@ -1,0 +1,2993 @@
+/*global css starts*/
+
+* {
+  outline: none;
+}
+
+@font-face {
+  font-family: 'Green';
+  src: local('fonts/118_MEIRYO.ttf'), local('fonts/118_MEIRYO.ttf'), url('fonts/118_MEIRYO.ttf');
+}
+
+@font-face {
+  font-family: 'Green1';
+  src: local('fonts/151_MEIRYO.ttf');
+}
+
+@font-face {
+  font-family: 'italic';
+  src: local('fonts/1883_MEIRYO.ttf'), url('fonts/1883_MEIRYO.ttf');
+}
+
+@font-face {
+  font-family: 'Trebuchet';
+  src: local('fonts/11_Trebuchet MS.ttf'), url('fonts/11_Trebuchet MS.ttf');
+}
+
+@font-face {
+  font-family: 'ArialBold';
+  src: local('fonts/6_Arial.ttf'), url('fonts/6_Arial.ttf');
+}
+
+html, body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #d0cccc;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: auto;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+/*global css ends*/
+
+#bk6ch15ss2 {
+  position: absolute;
+  width: 996px;
+  height: 680px;
+  /* background: url('../images/89.png'); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background: white;
+}
+
+#topmenubar {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: url(../images/1338.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+#logo {
+  position: absolute;
+  width: 108px;
+  height: 18px;
+  padding: 5px;
+  top: 6px;
+  right: 39px;
+  background: white;
+}
+
+#logoImg {
+  position: absolute;
+  width: 91%;
+  /* height: 100%; */
+}
+
+.objectivesText {
+  position: absolute;
+  top: 12px;
+  left: 648px;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f3efef;
+  cursor: pointer;
+}
+
+.quizText {
+  position: absolute;
+  top: 12px;
+  left: 747px;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f3efef;
+  cursor: pointer;
+}
+
+#closeBtn {
+  position: absolute;
+  width: 32px;
+  height: 38px;
+  top: 2px;
+  right: 5px;
+  background: url(../images/10.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.closeBtn1 {
+  position: absolute;
+  width: 32px;
+  height: 11px;
+  top: 28px;
+  right: 2px;
+  color: white;
+  background: black;
+  font-size: 11px;
+  font-family: sans-serif;
+  pointer-events: none;
+}
+
+#closeBtn:hover {
+  position: absolute;
+  width: 34px;
+  height: 39px;
+  top: 2px;
+  right: 5px;
+  background: url(../images/11.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#topmenubar2 {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background: url(../images/3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  top: 40px;
+  z-index: 100;
+  box-shadow: 0 8px 6px -7px #939191;
+}
+
+#contentTittle {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+}
+
+.titleName {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  font-size: 17px;
+  font-family: Arial;
+  letter-spacing: 0.7px;
+  color: #747474;
+  font-weight: bold;
+}
+
+#downmenubar {
+  position: absolute;
+  width: 100%;
+  height: 31px;
+  bottom: 0px;
+  left: 0;
+  z-index: 200;
+  background: #ccff00;
+  pointer-events: none;
+}
+
+.copyRight {
+  position: absolute;
+  top: -1px;
+  font-size: 11px;
+  left: 15px;
+}
+
+#viewallBtn {
+  position: absolute;
+  width: 87px;
+  height: 25px;
+  top: 8.4px;
+  left: 51px;
+  cursor: pointer;
+}
+
+#viewallhoverBtn {
+  position: absolute;
+  width: 87px;
+  height: 27px;
+  top: 9px;
+  left: 51px;
+  cursor: pointer;
+  display: none;
+}
+
+#viewallBtnImg, #viewallhoverBtnImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#viewlAllContainer {
+  position: absolute;
+  width: 89%;
+  height: 85%;
+  top: 87px;
+  left: 51px;
+  z-index: 1;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  display: none;
+}
+
+#viewlAllContentsHeader {
+  position: absolute;
+  width: 100%;
+  height: 12%;
+  top: 0;
+  left: 0;
+  background: url(../images/36.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#viewAllContentSymbol {
+  position: absolute;
+  width: 4.5%;
+  height: 68%;
+  top: 11px;
+  left: 47px;
+  /* border: 2px solid black; */
+  background: url(../images/39.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#viewAllContentClose {
+  position: absolute;
+  width: 4%;
+  height: 54%;
+  top: 15px;
+  right: 27px;
+  /* border: 2px solid black; */
+  background: url(../images/48.PNG);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#viewAllSelect {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 37%;
+  height: 37%;
+  border-radius: 6px;
+}
+
+#viewAllContents {
+  position: absolute;
+  width: 100%;
+  height: 88%;
+  top: 68px;
+  left: 0px;
+  background: url(../images/40.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.Slides {
+  position: absolute;
+  width: 996px;
+  height: 650px;
+  display: none;
+}
+
+#slide1Content {
+  width: 100%;
+  height: 89%;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+}
+
+.slideconatiner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.atomsDivContainer {
+  position: absolute;
+  width: 636px;
+  height: 195px;
+  top: 1px;
+  left: 0px;
+}
+
+.atomsClick {
+  pointer-events: none;
+}
+
+.atomCDiv {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 16px;
+  left: 57px;
+  cursor: pointer;
+  background: url(../images/1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomNDiv {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 16px;
+  left: 128px;
+  cursor: pointer;
+  background: url(../images/2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomHDiv {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 31px;
+  left: 200px;
+  cursor: pointer;
+  background: url(../images/3\(1\).png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomODiv {
+  position: absolute;
+  width: 43px;
+  height: 40px;
+  top: 22px;
+  left: 238px;
+  cursor: pointer;
+  background: url(../images/4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomSDiv {
+  position: absolute;
+  width: 65px;
+  height: 60px;
+  top: 10px;
+  left: 291px;
+  cursor: pointer;
+  background: url(../images/5.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomClDiv {
+  position: absolute;
+  width: 69px;
+  height: 60px;
+  top: 10px;
+  left: 360px;
+  cursor: pointer;
+  background: url(../images/6.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomCuDiv {
+  position: absolute;
+  width: 90px;
+  height: 83px;
+  top: 2px;
+  left: 430px;
+  cursor: pointer;
+  background: url(../images/7.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomPDiv {
+  position: absolute;
+  width: 62px;
+  height: 59px;
+  top: 10px;
+  left: 535px;
+  cursor: pointer;
+  background: url(../images/8.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomNaDiv {
+  position: absolute;
+  width: 110px;
+  height: 107px;
+  top: 68px;
+  left: 14px;
+  cursor: pointer;
+  background: url(../images/9.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomCaDiv {
+  position: absolute;
+  width: 110px;
+  height: 107px;
+  top: 68px;
+  left: 130px;
+  cursor: pointer;
+  background: url(../images/10_1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomAiDiv {
+  position: absolute;
+  width: 88px;
+  height: 81px;
+  top: 84px;
+  left: 244px;
+  cursor: pointer;
+  background: url(../images/11_1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomMgDiv {
+  position: absolute;
+  width: 92px;
+  height: 87px;
+  top: 81px;
+  left: 335px;
+  cursor: pointer;
+  background: url(../images/12.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomFeDiv {
+  position: absolute;
+  width: 87px;
+  height: 84px;
+  top: 82px;
+  left: 435px;
+  cursor: pointer;
+  background: url(../images/13_1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.atomMnDiv {
+  position: absolute;
+  width: 88px;
+  height: 83px;
+  top: 82px;
+  left: 530px;
+  cursor: pointer;
+  background: url(../images/14_1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.microscopicViewContainer {
+  position: absolute;
+  width: 579px;
+  height: 384px;
+  top: 195px;
+  left: 69px;
+  background: url(../images/347.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.blackScrrenMainContainer {
+  position: absolute;
+  width: 536px;
+  height: 288px;
+  top: 40px;
+  left: 20px;
+  background: black;
+  overflow: hidden;
+}
+
+.blackScreenContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  /* left: -5px; */
+  background: url(../images/350.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+  outline: none;
+  background: black;
+}
+
+.microScopeDiv {
+  position: absolute;
+  width: 28px;
+  height: 45px;
+  bottom: 4px;
+  left: 20px;
+  background: url(../images/351.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.microScopicViewText {
+  position: absolute;
+  font-family: Arial;
+  font-size: 19px;
+  top: 326px;
+  left: 70px;
+  color: #ffffff;
+  letter-spacing: 1;
+}
+
+.scrrenControllerDiv {
+  position: absolute;
+  width: 328px;
+  height: 58px;
+  bottom: 0px;
+  right: -2px;
+  background: url(../images/354.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.textContainer {
+  position: absolute;
+  font-family: Arial;
+  font-size: 16px;
+  top: 175px;
+  left: 129px;
+  color: black;
+  font-weight: bold;
+}
+
+.animationOnDiv {
+  position: absolute;
+  width: 77px;
+  height: 60px;
+  top: -4px;
+  left: 51px;
+  cursor: pointer;
+}
+
+.insdeaniation_on {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: url(../images/microAnalyzerAnimSwitchOff_btn0001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.insdeaniation_on:hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: url(../images/microAnalyzerAnimSwitchOff_btn0002.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.insdeaniation_off {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: url(../images/microAnalyzerAnimSwitchOff_btn0003.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.insdeaniation_off:hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: url(../images/microAnalyzerAnimSwitchOff_btn0005.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.animationOnDivImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.earlierScreenDiv {
+  position: absolute;
+  width: 29px;
+  height: 25px;
+  top: -5px;
+  left: 172px;
+  cursor: pointer;
+  background: url(../images/microAnalyzerNextScreen_btn0001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 80px;
+  height: 62px;
+}
+
+.earlierScreenDiv:hover {
+  position: absolute;
+  width: 29px;
+  height: 25px;
+  top: -5px;
+  left: 172px;
+  cursor: pointer;
+  background: url(../images/microAnalyzerNextScreen_btn0002.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 80px;
+  height: 62px;
+}
+
+.earlierScreenDivImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.animationOnDivText {
+  position: absolute;
+  font-family: Arial;
+  font-size: 11px;
+  top: 33px;
+  left: 51px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.animationOnDivText:hover {
+  position: absolute;
+  font-family: Arial;
+  font-size: 11px;
+  top: 33px;
+  left: 51px;
+  color: #00FFFF;
+  cursor: pointer;
+}
+
+.earlierScreenDivText {
+  position: absolute;
+  font-family: Arial;
+  font-size: 11px;
+  top: 33px;
+  left: 154px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.earlierScreenDivText:hover {
+  position: absolute;
+  font-family: Arial;
+  font-size: 11px;
+  top: 33px;
+  left: 154px;
+  color: #00FFFF;
+  cursor: pointer;
+}
+
+.InstructionContainer {
+  position: absolute;
+  width: 317px;
+  height: 571px;
+  top: 6px;
+  left: 669px;
+  background: white;
+  /* cursor: pointer; */
+  /* border-radius:20px */
+  /* border-bottom:0px; */
+}
+
+.instructionPptTopBar_symDiv {
+  position: absolute;
+  width: 329px;
+  height: 46px;
+  top: 0px;
+  left: 663px;
+  background: url(../images/254.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* cursor: pointer; */
+}
+
+.instructHeaderTxt1 {
+  position: absolute;
+  top: 11px;
+  left: 19px;
+  font-family: Arial;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.instructionContentDiv {
+  position: absolute;
+  width: 100%;
+  height: 527px;
+  top: 39px;
+  left: 0px;
+  background: url(../images/instructionContent.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.intructionNum {
+  position: absolute;
+  width: 100%;
+  top: 475px;
+  left: 0px;
+  font-family: Arial;
+  font-size: 14px;
+  color: #FF6600;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+
+.previousBtn {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 485px;
+  left: 15px;
+  cursor: pointer;
+  background: url(../images/previousBtn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.previousBtn:hover {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 485px;
+  left: 15px;
+  cursor: pointer;
+  background: url(../images/previousBtnhover.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* display: none; */
+}
+
+.nextBtn {
+  position: absolute;
+  width: 33px;
+  height: 29px;
+  top: 483px;
+  left: 275px;
+  cursor: pointer;
+  background: url(../images/nextBtn0001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.nextBtn:hover {
+  position: absolute;
+  width: 30px;
+  height: 26px;
+  top: 483px;
+  left: 275px;
+  cursor: pointer;
+  background: url(../images/nextBtn0002.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.instructionClose {
+  position: absolute;
+  width: 100%;
+  height: 19px;
+  bottom: 0px;
+  left: 0px;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  background: url(../images/instructionClose.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.instructionClose:hover {
+  position: absolute;
+  width: 100%;
+  height: 22px;
+  bottom: 0px;
+  left: 0px;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  line-height: 26px;
+  cursor: pointer;
+  background: url(../images/instructionCloseHover.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.instructionClose1 {
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  bottom: 5px;
+  left: 0px;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 27px;
+  background: url(../images/instructionCloseHover.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.instructionClose1:hover {
+  position: absolute;
+  width: 100%;
+  height: 22px;
+  bottom: 5px;
+  left: 0px;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  line-height: 26px;
+  cursor: pointer;
+  background: url(../images/instructionClose.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.instructionSlidesContainer {
+  position: absolute;
+  width: 100%;
+  height: 475px;
+  top: 0px;
+  left: 0px;
+}
+
+.instructionSlides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.instruction1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.instruction11Txt {
+  position: absolute;
+  width: 100%;
+  top: 123px;
+  text-align: center;
+  color: black;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.instruction1TextDiv {
+  position: absolute;
+  width: 100%;
+  height: 101%;
+  background-color: white;
+  border-bottom: 1px solid;
+}
+
+.instru1Text {
+  position: absolute;
+  font-family: Arial;
+  font-size: 19px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  text-align: center;
+  top: 16px;
+  left: 56px;
+}
+
+.text1 {
+  position: absolute;
+  font-family: Arial;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  top: 102px;
+  left: 26px;
+}
+
+.instruction2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.instr2Div {
+  position: absolute;
+  width: 252px;
+  height: 72px;
+  top: 78px;
+  left: 27px;
+  background: url(../images/355.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.vrLine {
+  position: absolute;
+  top: 157px;
+  left: 140px;
+  border-left: 2px solid #0000ff;
+  height: 70px;
+}
+
+.instr2Text {
+  position: absolute;
+  top: 220px;
+  left: 15px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #0000ff;
+}
+
+.instr3Text {
+  position: absolute;
+  top: 116px;
+  left: 37px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.instr3Text1 {
+  position: absolute;
+  top: 119px;
+  left: 50px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.instr3Text2 {
+  position: absolute;
+  top: 120px;
+  left: 23px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.vrLine2 {
+  position: absolute;
+  top: 170px;
+  left: 148px;
+  border-left: 2px solid #0000ff;
+  height: 30px;
+}
+
+.vrLine21 {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  border-left: 2px solid #0000ff;
+  height: 30px;
+}
+
+.microAnalyerDiv1 {
+  position: absolute;
+  width: 219px;
+  height: 140px;
+  top: 207px;
+  left: 49px;
+  background: url(../images/microanalyer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.microAnalyerDiv {
+  position: absolute;
+  width: 219px;
+  height: 140px;
+  top: 207px;
+  left: 36px;
+  background: url(../images/microanalyer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.microAnalyerDiv02 {
+  position: absolute;
+  width: 219px;
+  height: 140px;
+  top: 207px;
+  left: 46px;
+  background: url(../images/microanalyer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.microAnalyerDiv1 {
+  position: absolute;
+  width: 219px;
+  height: 140px;
+  top: 205px;
+  left: 46px;
+  background: url(../images/microanalyer2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.vrLine3 {
+  position: absolute;
+  top: 169px;
+  left: 140px;
+  border-left: 2px solid #0000ff;
+  height: 62px;
+}
+
+.instr6Text {
+  position: absolute;
+  left: 100px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.microAnalyerDiv2 {
+  position: absolute;
+  width: 219px;
+  height: 170px;
+  top: 52px;
+  left: 36px;
+  background: url(../images/microanalyer3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.instr7Text {
+  position: absolute;
+  left: 40px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.instr7Text1 {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.instruction10Div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.vrLine4 {
+  position: absolute;
+  top: 56px;
+  left: 151px;
+  z-index: 1;
+  border-left: 2px solid black;
+  height: 103px;
+}
+
+.microAnalyerDiv3 {
+  position: absolute;
+  width: 219px;
+  height: 170px;
+  top: 90px;
+  left: 46px;
+  background: url(../images/microanalyer2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.microAnalyerDiv4 {
+  position: absolute;
+  width: 239px;
+  height: 165px;
+  top: 95px;
+  left: 36px;
+  background: url(../images/microanalyer4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.microAnalyerDiv5 {
+  position: absolute;
+  width: 239px;
+  height: 165px;
+  top: 96px;
+  left: 36px;
+  background: url(../images/microanalyer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.vrLine5 {
+  position: absolute;
+  top: 68px;
+  left: 157px;
+  z-index: 1;
+  border-left: 2px solid black;
+  height: 46px;
+}
+
+.vrLine51 {
+  position: absolute;
+  top: 81px;
+  left: 157px;
+  z-index: 1;
+  border-left: 2px solid black;
+  height: 46px;
+}
+
+.line-vertical {
+  position: absolute;
+  left: 200px;
+  top: 70px;
+  width: 0.1px;
+  border: 1px solid #f0f306;
+  height: 145px;
+}
+
+.arrow-down:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 7px solid transparent;
+}
+
+.arrow-down:before {
+  left: -7px;
+}
+
+.arrow-down:before {
+  bottom: -15px;
+  border-top: 15px solid #f0f306;
+}
+
+.text10 {
+  position: absolute;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  top: 102px;
+  left: 26px;
+}
+
+.instruction21Div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.text21 {
+  position: absolute;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  line-height: 16px;
+  top: 18px;
+  left: 26px;
+}
+
+.text22 {
+  position: absolute;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  top: 32px;
+  left: 14px;
+}
+
+.text23 {
+  position: absolute;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  top: 16px;
+  left: 14px;
+}
+
+.text23_1 {
+  position: absolute;
+  top: 85px;
+  left: 19px;
+}
+
+.text23Div {
+  position: absolute;
+  width: 272px;
+  height: 130px;
+  top: 122px;
+  left: 14px;
+  border: 2px solid black;
+}
+
+.text23DivText {
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+
+.nucleusStructureDiv {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 122px;
+  left: 118px;
+  cursor: pointer;
+  background: url(../images/301.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 999;
+}
+
+.hydroAtom {
+  position: absolute;
+  width: 105px;
+  height: 98px;
+  top: 85px;
+  left: 116px;
+  background: url(../images/proton.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.arrowLine1 {
+  position: absolute;
+  width: 73px;
+  height: 137px;
+  top: 9px;
+  left: 58px;
+  z-index: 1000;
+  transform: rotate(299deg);
+  border-bottom: 3px solid yellow;
+  pointer-events: none;
+}
+
+.arrowLine2 {
+  position: absolute;
+  width: 159px;
+  height: 137px;
+  top: -58px;
+  left: 172px;
+  border-bottom: 3px solid yellow;
+  pointer-events: none;
+}
+
+.nucleusMainContainer {
+  position: absolute;
+  width: 161px;
+  height: 190px;
+  top: 66px;
+  left: 349px;
+}
+
+@media only screen and (max-width: 480px) {
+  .nucleusContainsDiv {
+    font-size: 18px !important;
+    top: 2px;
+  }
+
+  .microscopicViewContainer {
+    width: 560px
+  }
+
+  .blackScrrenMainContainer {
+    width: 520px
+  }
+}
+
+.nucleusContainsDiv {
+  position: absolute;
+  /* top: -21px; */
+  left: -12px;
+  color: yellow;
+  font-family: Times New Roman;
+  font-size: 20px;
+  width: 183px;
+}
+
+.proNeuEleDiv {
+  position: absolute;
+  width: 16px;
+  height: 111px;
+  top: 34px;
+  left: -9px;
+  background: url(../images/536.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.protonsText {
+  position: absolute;
+  width: 150px;
+  top: 11px;
+  left: 15.5px;
+  color: yellow;
+  font-family: Times New Roman;
+  font-size: 19px;
+}
+
+.protonsValue {
+  /* position: absolute; */
+  /* top: 8px; */
+  /* left:122px; */
+  /* color: yellow; */
+  /* font-family: Times New Roman; */
+  /* font-size: 21px; */
+}
+
+.neutronsText {
+  position: absolute;
+  width: 150px;
+  top: 40px;
+  left: 14px;
+  color: yellow;
+  font-family: Times New Roman;
+  font-size: 19px;
+}
+
+.neutronsValue {
+  /* position: absolute; */
+  /* top: 38px; */
+  /* left:122px; */
+  /* color: yellow; */
+  /* font-family: Times New Roman; */
+  /* font-size: 21px; */
+}
+
+.neutronVal1 {
+  padding-left: 2px;
+}
+
+.neutronVal2 {
+  padding-left: 14px;
+}
+
+.elemNameDiv {
+  position: absolute;
+  /* top: 170px;
+  left: -70px; */
+  top: 201px;
+  left: -289px;
+  /* color: yellow; */
+  color: white;
+  font-family: Times New Roman;
+  font-size: 19px;
+}
+
+.elemName {
+  position: absolute;
+  left: 88px;
+}
+
+.electronText {
+  position: absolute;
+  width: 150px;
+  top: 110px;
+  left: 14px;
+  color: yellow;
+  font-family: Times New Roman;
+  font-size: 19px;
+}
+
+.electronValue {
+  padding-left: 1px;
+  /* position: absolute; */
+  /* top: 107px; */
+  /* left:122px; */
+  /* color: yellow; */
+  /* font-family: Times New Roman; */
+  /* font-size: 21px; */
+}
+
+.orbitDiv1 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #fffefeb8;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  top: 96px;
+  left: 92px;
+  /* animation: rotation 3s;
+  animation-iteration-count: infinite; */
+  z-index: 400;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.orbitDiv2 {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 2px solid #fffefeb8;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  top: 71px;
+  left: 67px;
+  z-index: 300;
+}
+
+.orbitDiv3 {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border: 2px solid #fffefeb8;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  top: 46px;
+  left: 42px;
+  z-index: 200;
+}
+
+.orbitDiv4 {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border: 2px solid #fffefeb8;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  top: 20px;
+  left: 17px;
+  z-index: 100;
+}
+
+.electrons {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url(../images/490.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  border: 1.5px solid #ffff00fa;
+  border-radius: 50%;
+  filter: brightness(0.9);
+}
+
+.or1el1 {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+}
+
+.or1el2 {
+  position: absolute;
+  top: 72px;
+  left: 65px;
+}
+
+.or2el1 {
+  position: absolute;
+  top: -3px;
+  left: 31px;
+}
+
+.or2el2 {
+  position: absolute;
+  top: -9px;
+  left: 57px;
+}
+
+.or2el3 {
+  position: absolute;
+  top: 33px;
+  left: 125px;
+}
+
+.or2el4 {
+  position: absolute;
+  top: 58px;
+  left: 131px;
+}
+
+.or2el5 {
+  position: absolute;
+  top: 63px;
+  left: -10px;
+}
+
+.or2el6 {
+  position: absolute;
+  top: 89px;
+  left: -5px;
+}
+
+.or2el7 {
+  position: absolute;
+  top: 132px;
+  left: 62px;
+}
+
+.or2el8 {
+  position: absolute;
+  top: 127px;
+  left: 89px;
+}
+
+.or3el1 {
+  position: absolute;
+  top: -10px;
+  left: 79px;
+}
+
+.or3el2 {
+  position: absolute;
+  top: -8px;
+  left: 105px;
+}
+
+.or3el3 {
+  position: absolute;
+  top: 63px;
+  left: -7px;
+}
+
+.or3el4 {
+  position: absolute;
+  top: 90px;
+  left: -8px;
+}
+
+.or3el5 {
+  position: absolute;
+  top: 72px;
+  left: 181px;
+}
+
+.or3el6 {
+  position: absolute;
+  top: 98px;
+  left: 181px;
+}
+
+.or3el7 {
+  position: absolute;
+  top: 180px;
+  left: 101px;
+}
+
+.or3el8 {
+  position: absolute;
+  top: 174px;
+  left: 124px;
+}
+
+.or3el9 {
+  position: absolute;
+  top: 5px;
+  /* left: 37px; */
+  left: 34px;
+}
+
+.or3el10 {
+  position: absolute;
+  /* top: 24px;
+  left: 16px; */
+  top: 22px;
+  left: 13px;
+}
+
+.or3el11 {
+  position: absolute;
+  top: 136px;
+  left: 4px;
+}
+
+.or3el12 {
+  position: absolute;
+  top: 154px;
+  left: 19px;
+}
+
+.or3el13 {
+  position: absolute;
+  top: 156px;
+  left: 150px;
+}
+
+.or3el14 {
+  position: absolute;
+  top: 137px;
+  left: 166px;
+}
+
+.or3el15 {
+  position: absolute;
+  top: 30px;
+  left: 164px;
+}
+
+.or3el16 {
+  position: absolute;
+  top: 12px;
+  left: 146px;
+}
+
+.or3el17 {
+  position: absolute;
+  top: 174px;
+  left: 46px;
+}
+
+.or3el18 {
+  position: absolute;
+  top: 181px;
+  left: 68px;
+}
+
+.or4el1 {
+  position: absolute;
+  top: 105px;
+  left: 232px;
+}
+
+.or4el2 {
+  position: absolute;
+  top: 80px;
+  left: 228px;
+}
+
+.or4el3 {
+  position: absolute;
+  top: 126px;
+  left: -8px;
+}
+
+.blackScreenContainer2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  background: url(../images/350.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.protonsNeutronDiv {
+  position: absolute;
+  width: 265px;
+  height: 250px;
+  top: 10px;
+  left: 20px;
+}
+
+.protons {
+  position: absolute;
+  width: 104px;
+  height: 100px;
+  background: url(../images/proton.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.neutrons {
+  position: absolute;
+  width: 104px;
+  height: 100px;
+  background: url(../images/neutron.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.proton1 {
+  top: 10px;
+  left: 30px;
+}
+
+.neutron1 {
+  top: 9px;
+  left: 76px;
+}
+
+.proton2 {
+  top: 48px;
+  left: 134px;
+}
+
+.neutron2 {
+  top: 88px;
+  left: 11px;
+}
+
+.neutron3 {
+  top: 135px;
+  left: 70px;
+}
+
+.proton3 {
+  top: 132px;
+  left: 126px;
+}
+
+.neutron4 {
+  top: 84px;
+  left: 99px;
+}
+
+.proton4 {
+  top: 54px;
+  left: 30px;
+}
+
+.protonsNeutronValue {
+  position: absolute;
+  width: 148px;
+  height: 84px;
+  top: 55px;
+  left: 351px;
+  /* background:red; */
+  font-size: 21px
+}
+
+.bigProtonsDiv {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -2px;
+  left: -10px;
+  border-radius: 50%;
+  background-color: #f47c5c;
+}
+
+.bigProtonsText div {
+  position: absolute;
+  text-align: center;
+  /* width: 100%; */
+  left: 80px;
+  /* font-size: 21px; */
+  top: 2px;
+}
+
+.bigNeutronsText div {
+  position: absolute;
+  text-align: center;
+  /* width: 100%; */
+  left: 89px;
+  /* font-size: 21px; */
+  top: 2px;
+}
+
+.bigProtonsText {
+  position: absolute;
+  /* top: -19px; */
+  left: 28px;
+  color: yellow;
+  /* font-family: Times New Roman; */
+  /* font-size: 21px; */
+  width: 100%;
+}
+
+.bigProtonsValue {
+  position: absolute;
+  /* top: -19px; */
+  /* right: 1px; */
+  color: yellow;
+  /* font-family: Times New Roman; */
+  /* font-size: 21px; */
+  left: 134px;
+}
+
+.bigNeutronsDiv {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 3px;
+  left: -10px;
+  border-radius: 50%;
+  background-color: #0cf33c;
+}
+
+.bigNeutronsText {
+  position: absolute;
+  top: 55px;
+  left: 28px;
+  color: yellow;
+  /* font-family: Times New Roman; */
+  /* font-size: 21px; */
+  width: 100%;
+}
+
+.bigNeutronsValue {
+  position: absolute;
+  top: 55px;
+  left: 135px;
+  color: yellow;
+  /* font-family: Times New Roman; */
+  /* font-size: 21px; */
+}
+
+.instruction12 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.instructionText {
+  position: absolute;
+  font-family: Arial;
+  font-size: 12.5px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  width: 100%;
+  /* line-height:17px */
+}
+
+.instruction12Text {
+  top: 90px;
+  left: 32px;
+}
+
+.instruction12Text2 {
+  top: 165px;
+  left: 55px;
+}
+
+.instruction12answer {
+  top: 206px;
+  left: 32px;
+}
+
+.instructionPanelDoorDiv {
+  position: absolute;
+  width: 292px;
+  height: 105px;
+  top: 206px;
+  left: 18px;
+  cursor: pointer;
+}
+
+.instruction15PanelDoorDiv {
+  position: absolute;
+  width: 292px;
+  height: 105px;
+  top: 141px;
+  left: 18px;
+  cursor: pointer;
+}
+
+.instruction115PanelDoorDiv {
+  position: absolute;
+  width: 309px;
+  height: 105px;
+  top: 141px;
+  left: 4px;
+  cursor: pointer;
+}
+
+.leftPanelDoor {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0px;
+  left: 1px;
+  background: url(../images/instructAnsPanel_LeftDoor_sym.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.rightPanelDoor {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0px;
+  right: 1px;
+  background: url(../images/instructAnsPanel_RightDoor_sym.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.text14 {
+  position: absolute;
+  top: 70px;
+  left: 32px;
+}
+
+.instruction15Text {
+  top: 37px;
+  left: 17px;
+}
+
+.instruction15Text2 {
+  top: 110px;
+  left: 55px;
+}
+
+.instruction15answer {
+  top: 141px;
+  left: 32px;
+}
+
+.instruction115answer {
+  top: 141px;
+  left: 17px;
+  width: 89%;
+}
+
+.text20 {
+  font-size: 12px;
+}
+
+.instruction24Text {
+  top: 11px;
+  left: 17px;
+}
+
+.instruction24Text2 {
+  top: 99px;
+  left: 55px;
+}
+
+.instr24 {
+  top: 110px;
+}
+
+.instruction24PanelDoorDiv {
+  position: absolute;
+  width: 300px;
+  height: 105px;
+  top: 141px;
+  left: 9px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+}
+
+.instdoor12 {
+  top: 130px;
+}
+
+.instruction24answer {
+  top: 141px;
+  left: 32px;
+}
+
+.text24 {
+  top: 156px;
+  left: 122px;
+}
+
+.text25 {
+  top: 26px;
+  font-size: 13px;
+}
+
+.text266 {
+  font-size: 13px;
+}
+
+.click25 {
+  top: 109px;
+}
+
+.instruct25 {
+  top: 152px;
+  left: 102px;
+  width: 100%;
+  line-height: 16px;
+}
+
+.text26 {
+  top: 119px;
+}
+
+.text27 {
+  top: 145px;
+  line-height: 16px;
+}
+
+.text28 {
+  top: 144px;
+  left: 76px;
+  width: 100%;
+  line-height: 16px;
+}
+
+.blackScreenContainer3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1500;
+  background: url(../images/350.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.protonsGifText {
+  position: absolute;
+  bottom: 11px;
+  left: 63px;
+  color: yellow;
+  font-family: Times New Roman;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.protonsGif {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  top: 39px;
+  left: 183px;
+  z-index: 1500;
+  background: url(../images/bigProton_sym0001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.blackScreenContainer4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1500;
+  background: url(../images/350.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.neutronsGifText {
+  position: absolute;
+  bottom: 11px;
+  left: 63px;
+  color: yellow;
+  font-family: Times New Roman;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.neutronsGif {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  top: 39px;
+  left: 183px;
+  z-index: 1500;
+  background: url(../images/bigNeutron_sym.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.blackScreenContainer5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1600;
+  background: url(../images/350.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.electronsGifText {
+  position: absolute;
+  bottom: 11px;
+  left: 63px;
+  color: yellow;
+  font-family: Times New Roman;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.electronsGif {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  top: 39px;
+  left: 183px;
+  z-index: 1500;
+  background: url(../images/bigElectron_sym0001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.objectivesDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1600;
+  background: #32cd3240;
+  display: none;
+}
+
+.objectivesContainer {
+  position: absolute;
+  width: 300px;
+  height: 288px;
+  top: 187px;
+  left: 328px;
+}
+
+.objectivesHeader {
+  position: absolute;
+  width: 100%;
+  height: 23px;
+  top: 1px;
+  left: 1px;
+  background: url(../images/objectivesheader.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.objectivesFooter {
+  position: absolute;
+  width: 100%;
+  height: 23px;
+  bottom: 1px;
+  left: 1px;
+  background: url(../images/objectivesfooter.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.objectiveTitle {
+  position: absolute;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  top: 3px;
+  left: 6px;
+}
+
+.objectiveTitle1 {
+  position: absolute;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  top: 3px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.objectivesContent {
+  position: absolute;
+  width: 100%;
+  height: 242px;
+  top: 23px;
+  left: 0px;
+  background-color: #000000ba;
+}
+
+.objectivesContentText {
+  position: absolute;
+  font-family: Arial;
+  /* font-weight: bold; */
+  font-size: 12px;
+  color: white;
+  top: 10px;
+  left: 21px;
+  letter-spacing: 0.7px;
+  text-align: justify;
+  line-height: 14px;
+  width: 259px;
+}
+
+.quizMainContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  /* background-color:green;
+  opacity: 0.4; */
+  background: #32cd3240;
+  display: none;
+  z-index: 1600;
+}
+
+.quizContainer {
+  position: absolute;
+  width: 872px;
+  height: 556px;
+  top: 74px;
+  left: 73px;
+  background: url(../images/quizContainer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.quizContentDiv {
+  position: absolute;
+  width: 100%;
+  height: 86%;
+  top: 41px;
+  left: 1px;
+  background-color: white;
+}
+
+.quiznextQBtn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 2px;
+  right: 11px;
+  cursor: pointer;
+  background: url(../images/quiznextQBtn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.quizpreviousQBtn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 2px;
+  left: 11px;
+  cursor: pointer;
+  background: url(../images/quizpreviousQBtn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.quizQuestionsSlides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.markButton {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 10px;
+  left: 23px;
+  border: 1px solid black;
+}
+
+.markButtonText {
+  position: absolute;
+  top: 10px;
+  left: 48px;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.questionText {
+  position: absolute;
+  top: 63px;
+  left: 48px;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.radioBtns {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  left: 48px;
+}
+
+.options {
+  position: absolute;
+  font-family: Arial;
+  font-size: 14px;
+  left: 32px;
+  top: 0px;
+}
+
+.optionAnswers {
+  position: absolute;
+  font-family: Arial;
+  font-size: 14px;
+  left: 63px;
+  top: 0px;
+  width: max-content;
+}
+
+.radioDiv {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  /* left: 48px; */
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.radioDiv1 {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  /* left: 48px; */
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.radioDivmain {
+  width: 10%;
+  position: absolute;
+  /* width: auto; */
+  height: 13px;
+  left: 48px;
+  /* border-radius: 50%; */
+  /* border: 1px solid black; */
+}
+
+.qustOptions>.radioDivmain:nth-child(1) {
+  top: 180px;
+}
+
+.qustOptions>.radioDivmain:nth-child(2) {
+  top: 220px;
+}
+
+.qustOptions>.radioDivmain:nth-child(3) {
+  top: 260px;
+}
+
+.qustOptions>.radioDivmain:nth-child(4) {
+  top: 300px;
+}
+
+.qustOptions>.radioDivmain:nth-child(5) {
+  top: 340px;
+}
+
+.opAnswer1 {
+  left: 62px;
+  width: 294px;
+}
+
+.quizQuestionText {
+  position: absolute;
+  font-family: Arial;
+  font-size: 17px;
+  width: 100%;
+  font-weight: bold;
+  bottom: -9px;
+  text-align: center;
+  color: white;
+}
+
+.markQuestionsDiv>img {
+  position: absolute;
+  width: 18px;
+  left: -28px;
+  top: -2px;
+}
+
+.quizcloseBtn {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  right: 11px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.showQuestionListText {
+  position: absolute;
+  font-family: Arial;
+  font-size: 21px;
+  font-weight: bold;
+  top: 465px;
+  left: 340px;
+  cursor: pointer;
+  color: #009966;
+}
+
+.endQuizText {
+  position: absolute;
+  font-family: Arial;
+  font-size: 21px;
+  font-weight: bold;
+  top: 465px;
+  right: 30px;
+  cursor: pointer;
+  color: #009966;
+}
+
+.endQuizDiv {
+  position: absolute;
+  width: 496px;
+  height: 133px;
+  top: 182px;
+  left: 209px;
+  background: url(../images/endQuiz.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+  z-index: 999;
+}
+
+.endQuizYes {
+  position: absolute;
+  width: 38px;
+  height: 25px;
+  top: 85px;
+  left: 155px;
+  cursor: pointer;
+}
+
+.endQuizNo {
+  position: absolute;
+  width: 31px;
+  height: 25px;
+  top: 85px;
+  left: 330px;
+  cursor: pointer;
+}
+
+.quizResultsDiv {
+  position: absolute;
+  width: 100%;
+  /* height: 86%; */
+  top: 41px;
+  left: 1px;
+  background-color: white;
+  display: none;
+  z-index: 999;
+}
+
+.scoreDiv {
+  position: absolute;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  top: 452px;
+  left: 30px;
+}
+
+.showQuestionSlstDiv {
+  position: absolute;
+  width: 100%;
+  height: 86%;
+  top: 41px;
+  left: 1px;
+  background-color: white;
+  display: none;
+}
+
+.listOfQText {
+  position: absolute;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  top: -4px;
+  left: 280px;
+  letter-spacing: 0.7px;
+}
+
+.markQuestionsDiv {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 63px;
+  left: 62px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.q1 {
+  position: absolute;
+  left: 25px;
+  top: -1px;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.mq1 {
+  top: 63px;
+}
+
+.mq2 {
+  top: 95px;
+}
+
+.mq3 {
+  top: 127px;
+}
+
+.mq4 {
+  top: 164px;
+}
+
+.mq5 {
+  top: 201px;
+}
+
+.mq6 {
+  top: 236px;
+}
+
+.mq7 {
+  top: 271px;
+}
+
+.mq8 {
+  top: 306px;
+}
+
+.mq9 {
+  top: 342px;
+}
+
+.mq10 {
+  top: 375px;
+}
+
+.mq11 {
+  top: 63px;
+  left: 240px
+}
+
+.mq12 {
+  top: 95px;
+  left: 240px
+}
+
+.mq13 {
+  top: 127px;
+  left: 240px
+}
+
+.mq14 {
+  top: 164px;
+  left: 240px
+}
+
+.mq15 {
+  top: 201px;
+  left: 240px
+}
+
+.mq16 {
+  top: 236px;
+  left: 240px
+}
+
+.showQuestionListText1 {
+  position: absolute;
+  font-family: Arial;
+  font-size: 21px;
+  font-weight: bold;
+  top: 429px;
+  left: 367px;
+  cursor: pointer;
+  color: #009966;
+}
+
+.backtothatQuestText {
+  position: absolute;
+  bottom: 40px;
+  left: 307px;
+  font-size: 15px;
+}
+
+.backtomainQuiz {
+  position: absolute;
+  font-family: Arial;
+  font-size: 21px;
+  font-weight: bold;
+  top: 429px;
+  left: 367px;
+  cursor: pointer;
+  color: #009966;
+}
+
+.endQuizText1 {
+  position: absolute;
+  font-family: Arial;
+  font-size: 21px;
+  font-weight: bold;
+  top: 424px;
+  right: 29px;
+  cursor: pointer;
+  color: #009966;
+}
+
+.quizHasEndedText {
+  position: absolute;
+  font-family: Arial;
+  font-size: 21px;
+  font-weight: bold;
+  top: 429px;
+  right: 1px;
+  cursor: pointer;
+  color: #009966;
+}
+
+.iconright {
+  position: absolute;
+  top: 42%;
+  left: 135px;
+  /* transform: translate(-50%,-50%); */
+  width: 68px;
+  height: 35px;
+  /* cursor: pointer; */
+  background: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotate(180deg);
+}
+
+.iconleft {
+  position: absolute;
+  top: 42%;
+  left: 4px;
+  /* transform: translate(-50%,-50%); */
+  width: 68px;
+  height: 35px;
+  /* cursor: pointer; */
+  background: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* transform: rotate(180deg); */
+}
+
+.icontop {
+  position: absolute;
+  top: 28px;
+  left: 74px;
+  /* transform: translate(-50%,-50%); */
+  width: 68px;
+  height: 35px;
+  /* cursor: pointer; */
+  background: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotate(90deg);
+}
+
+.icondown {
+  position: absolute;
+  top: 145px;
+  left: 74px;
+  /* transform: translate(-50%,-50%); */
+  width: 68px;
+  height: 35px;
+  /* cursor: pointer; */
+  background: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotate(270deg);
+}
+
+.iconright1 {
+  position: absolute;
+  top: 42%;
+  left: 180px;
+  /* transform: translate(-50%,-50%); */
+  width: 68px;
+  height: 35px;
+  /* cursor: pointer; */
+  background: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotate(0deg);
+}
+
+.iconleft1 {
+  position: absolute;
+  top: 42%;
+  left: -35;
+  /* transform: translate(-50%,-50%); */
+  width: 68px;
+  height: 35px;
+  /* cursor: pointer; */
+  background: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotate(180deg);
+}
+
+.icontop1 {
+  position: absolute;
+  top: -25px;
+  left: 74px;
+  /* transform: translate(-50%,-50%); */
+  width: 68px;
+  height: 35px;
+  /* cursor: pointer; */
+  background: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotate(270deg);
+}
+
+.icondown1 {
+  position: absolute;
+  top: 190px;
+  left: 74px;
+  /* transform: translate(-50%,-50%); */
+  width: 68px;
+  height: 35px;
+  /* cursor: pointer; */
+  background: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotate(90deg);
+}
+
+.corectorincorrect {
+  position: absolute;
+  top: 104px;
+  left: 15px;
+  width: 24px;
+  /* height: 28px; */
+}
+
+.corectorincorrectanswer {
+  position: absolute;
+  /* top: 104px; */
+  left: -30px;
+  width: 24px;
+  /* height: 28px; */
+}
+
+.downlogo {
+  position: absolute;
+  width: 114px;
+  height: 22px;
+  bottom: 3px;
+  right: 7px;
+  background-image: url(../images/343.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.instruction24 {
+  position: absolute;
+  /* width: 180px;
+  height: 92px;
+  top: 224px;
+  left: 62px; */
+  width: 160px;
+  height: 93px;
+  top: 224px;
+  left: 72px;
+  background-image: url(../images/ss113.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.instruction27 {
+  position: absolute;
+  width: 175px;
+  height: 100px;
+  top: 117px;
+  left: 67px;
+  background-image: url(../images/ss113.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.quizoverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(211 211 232 / 60%);
+  z-index: 1;
+  display: none;
+}
+
+/* click div */
+
+.atomCDiv1 {
+  position: absolute;
+  width: 37px;
+  height: 36px;
+  top: 24px;
+  left: 66px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.atomNDiv1 {
+  position: absolute;
+  width: 37px;
+  height: 36px;
+  top: 24px;
+  left: 135px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.atomHDiv1 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 33px;
+  left: 204px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.atomODiv1 {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 26px;
+  left: 244px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.atomSDiv1 {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 17px;
+  left: 301px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.atomClDiv1 {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 17px;
+  left: 370px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.atomCuDiv1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 8px;
+  left: 441px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.atomPDiv1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 14px;
+  left: 541px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.atomNaDiv1 {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  top: 77px;
+  left: 29px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.atomCaDiv1 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 77px;
+  left: 138px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.atomAiDiv1 {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 92px;
+  left: 255px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.atomMgDiv1 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 88px;
+  left: 344px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.atomFeDiv1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 89px;
+  left: 443px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.atomMnDiv1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 89px;
+  left: 540px;
+  cursor: pointer;
+  border-radius: 50%;
+}
