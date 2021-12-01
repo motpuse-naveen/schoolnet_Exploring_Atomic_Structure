@@ -118,24 +118,14 @@ $(document).on('click', '.quizcloseBtn', function () {
 
 var HydrogenClicked = false;
 
-$(document).on('click', '.atomCDiv1', function () {
-	$(".blackScreenContainer5").css("display", "none");
-	$(".blackScreenContainer2").css("display", "none");
-	$(".blackScreenContainer3").css("display", "none");
-	$(".protonsValue,.neutronsValue,.electronValue").text("6");
-	$(".blackScreenContainer").css("display", "block");
-	$(".orbitDiv1,.orbitDiv2,.orbitDiv3,.orbitDiv4,.electrons").css("display", "none");
-	$(".orbitDiv1,.orbitDiv2").css("display", "block");
-	$(".or1el1,.or1el2,.or2el1,.or2el2,.or2el3,.or2el4").css("display", "block");
-	$('.elemName').text('Carbon');
-	orbitRotation();
-});
+
 
 var callanim = false;
-
+/*
 $(document).on('click', '.atomsClick', function () {
 	// $('.atomsClick,.atomHDiv').css({ 'box-shadow': 'none', 'border-radius': '' });
 	// $(this).css({ 'box-shadow': '0px 0px 12px 0px black', 'border-radius': '50%' });
+	
 	$('.icondown1').stop(true, true);
 	$('.icondown').stop(true, true);
 	$('.icontop1').stop(true, true);
@@ -148,8 +138,37 @@ $(document).on('click', '.atomsClick', function () {
 	HydrogenClicked = false;
 	$('.nucleusStructureDiv').css({ 'background-image': 'url(assets/images/nucleus.png)', 'width': '40px', 'height': '40px', 'top': '122px', 'left': '118px' });
 });
+*/
+
+function atomsClick(){
+	$('.icondown1').stop(true, true);
+	$('.icondown').stop(true, true);
+	$('.icontop1').stop(true, true);
+	$('.icontop').stop(true, true);
+	$('.iconleft1').stop(true, true);
+	$('.iconleft').stop(true, true);
+	$('.iconright1').stop(true, true);
+	$('.iconright').stop(true, true);
+	callanim = false;
+	HydrogenClicked = false;
+	$('.nucleusStructureDiv').css({ 'background-image': 'url(assets/images/nucleus.png)', 'width': '40px', 'height': '40px', 'top': '122px', 'left': '118px' });
+}
+$(document).on('click', '.atomCDiv1', function () {
+	atomsClick();
+	$(".blackScreenContainer5").css("display", "none");
+	$(".blackScreenContainer2").css("display", "none");
+	$(".blackScreenContainer3").css("display", "none");
+	$(".protonsValue,.neutronsValue,.electronValue").text("6");
+	$(".blackScreenContainer").css("display", "block");
+	$(".orbitDiv1,.orbitDiv2,.orbitDiv3,.orbitDiv4,.electrons").css("display", "none");
+	$(".orbitDiv1,.orbitDiv2").css("display", "block");
+	$(".or1el1,.or1el2,.or2el1,.or2el2,.or2el3,.or2el4").css("display", "block");
+	$('.elemName').text('Carbon');
+	orbitRotation();
+});
 
 $(document).on('click', '.atomNDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -182,6 +201,7 @@ $(document).on('click', '.atomHDiv1', function () {
 });
 
 $(document).on('click', '.atomODiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -195,6 +215,7 @@ $(document).on('click', '.atomODiv1', function () {
 });
 
 $(document).on('click', '.atomSDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -208,6 +229,7 @@ $(document).on('click', '.atomSDiv1', function () {
 });
 
 $(document).on('click', '.atomClDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -221,6 +243,7 @@ $(document).on('click', '.atomClDiv1', function () {
 });
 
 $(document).on('click', '.atomCuDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -235,6 +258,7 @@ $(document).on('click', '.atomCuDiv1', function () {
 });
 
 $(document).on('click', '.atomPDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -249,6 +273,7 @@ $(document).on('click', '.atomPDiv1', function () {
 });
 
 $(document).on('click', '.atomNaDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -263,6 +288,7 @@ $(document).on('click', '.atomNaDiv1', function () {
 });
 
 $(document).on('click', '.atomCaDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -276,6 +302,7 @@ $(document).on('click', '.atomCaDiv1', function () {
 });
 
 $(document).on('click', '.atomAiDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -290,6 +317,7 @@ $(document).on('click', '.atomAiDiv1', function () {
 });
 
 $(document).on('click', '.atomMgDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -303,6 +331,7 @@ $(document).on('click', '.atomMgDiv1', function () {
 });
 
 $(document).on('click', '.atomFeDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
@@ -317,6 +346,7 @@ $(document).on('click', '.atomFeDiv1', function () {
 });
 
 $(document).on('click', '.atomMnDiv1', function () {
+	atomsClick();
 	$(".blackScreenContainer5").css("display", "none");
 	$(".blackScreenContainer2").css("display", "none");
 	$(".blackScreenContainer3").css("display", "none");
